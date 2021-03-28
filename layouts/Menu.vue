@@ -21,7 +21,7 @@ export default {
   props: {
     pages: {
       type: Array,
-      default: [
+      default: () => [
         {
           name: 'Home',
         },
