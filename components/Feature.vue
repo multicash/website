@@ -1,24 +1,25 @@
 <template>
   <div class="feature">
-    <div class="feature-image">
-      <svg
-        class="h-12 w-12"
-        :class="`text-${color}-500`"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      </svg>
+    <div class="flex items-center">
+      <div class="feature-image">
+        <svg
+          class="h-12 w-12"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </div>
+      <h4>{{ title }}</h4>
     </div>
-    <h4 :class="`text-${color}-500`">{{ title }}</h4>
-    <p><slot /></p>
+    <p class="text-gray-900 dark:text-gray-100"><slot /></p>
   </div>
 </template>
 
@@ -31,11 +32,6 @@ export default {
       type: String,
       default: '',
     },
-
-    color: {
-      type: String,
-      default: 'green',
-    },
   },
 }
 </script>
@@ -46,7 +42,7 @@ export default {
 }
 
 .feature-image {
-  @apply flex;
+  @apply flex mr-4;
 }
 
 .feature h4 {

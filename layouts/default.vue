@@ -31,4 +31,8 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+p {
+  @apply my-4;
+}
 </style>

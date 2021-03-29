@@ -7,7 +7,7 @@
 
       <ul class="menu-links">
         <li v-for="page in pages" :key="page.name">
-          <a>{{ page.name }}</a>
+          <nuxt-link tag="a" :to="page.href">{{ page.name }}</nuxt-link>
         </li>
       </ul>
     </div>
@@ -24,12 +24,15 @@ export default {
       default: () => [
         {
           name: 'Home',
+          href: '/',
         },
         {
           name: 'Get Started',
+          href: '/get-started',
         },
         {
           name: 'Download',
+          href: '/',
         },
       ],
     },
