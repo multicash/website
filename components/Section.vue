@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="section">
     <slot />
   </section>
 </template>
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style>
-section {
+.section {
   @apply py-16;
 }
 </style>

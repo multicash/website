@@ -26,10 +26,10 @@ export default {
           name: 'Home',
         },
         {
-          name: 'Resources',
+          name: 'Get Started',
         },
         {
-          name: 'Get Started',
+          name: 'Download',
         },
       ],
     },
