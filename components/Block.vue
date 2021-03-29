@@ -1,7 +1,7 @@
 <template>
-  <section class="section">
+  <div class="block">
     <slot />
-  </section>
+  </div>
 </template>
 
 <script>
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style>
-.section {
+.block {
   @apply py-16;
 }
 </style>

@@ -24,7 +24,7 @@
       </div>
     </colors-hero>
 
-    <section class="my-14">
+    <block class="my-14">
       <container>
         <div class="text-5xl font-extrabold leading-none tracking-tight">
           <span
@@ -60,9 +60,9 @@
           </Feature>
         </div>
       </container>
-    </section>
+    </block>
 
-    <section
+    <block
       class="bg-gradient-to-bl from-blue-100 to-pink-200 dark:from-blue-900 dark:to-pink-900"
     >
       <container>
@@ -111,9 +111,9 @@
           </Person>
         </div>
       </container>
-    </section>
+    </block>
 
-    <section>
+    <block>
       <container>
         <div class="text-5xl mb-4 font-extrabold leading-none tracking-tight">
           <span
@@ -136,7 +136,7 @@
           Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum.
         </p>
       </container>
-    </section>
+    </block>
   </div>
 </template>
 
