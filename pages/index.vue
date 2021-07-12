@@ -28,7 +28,7 @@
       <container>
         <BlockTitle>What is MultiCash...</BlockTitle>
 
-        <div class="mt-8 grid grid-cols-3 gap-8">
+        <div class="mt-8 grid grid-cols-4 gap-8">
           <Feature class="transform -rotate-3 text-green-500" title="Save">
             Earn up to 2.50% APY interest on your digital currency holdings.
             That is 41.66x the average national savings account rate of 0.06%
@@ -50,6 +50,10 @@
             fees which are as a set 0.50%, just enough to ensure payments are
             delivered instantly.
           </Feature>
+		  <Feature
+            class="transform rotate-1 text-grey-500" title="Save"> Earn up to 2.50% APY interest on your digital currency holdings.
+            That is 41.66x the average national savings account rate of 0.06%
+            APY.</Feature>
         </div>
       </container>
     </block>
