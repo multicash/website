@@ -50,10 +50,11 @@
             fees which are as a set 0.50%, just enough to ensure payments are
             delivered instantly.
           </Feature>
-		  <Feature
-            class="transform rotate-1 text-grey-500" title="Save"> Earn up to 2.50% APY interest on your digital currency holdings.
+          <Feature class="transform rotate-1 text-grey-500" title="Save">
+            Earn up to 2.50% APY interest on your digital currency holdings.
             That is 41.66x the average national savings account rate of 0.06%
-            APY.</Feature>
+            APY.</Feature
+          >
         </div>
       </container>
     </block>
