@@ -123,7 +123,7 @@ export default Vue.extend({})
 
 <style>
 .title {
-  @apply text-8xl font-extrabold flex;
+  @apply text-8xl font-extrabold;
   @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500;
 }
 
