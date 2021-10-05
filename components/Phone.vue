@@ -12,17 +12,18 @@ export default {
 
 <style>
 .phone {
-  @apply p-1
+  @apply absolute
+    p-1
     bg-white
     dark:bg-gray-800
     rounded-2xl
     shadow-lg
     transform
-    scale-200
-    translate-y-20;
+    scale-150
+    translate-y-14;
 }
 
 .phone img {
-  @apply rounded-xl w-36;
+  @apply rounded-xl w-32;
 }
 </style>

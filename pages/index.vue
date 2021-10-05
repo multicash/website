@@ -1,28 +1,18 @@
 <template>
   <div>
-    <colors-hero>
+    <hero>
       <div class="grid grid-cols-2 gap-4">
         <div>
-          <p class="text-7xl font-extrabold text-white">
-            Get more from your digital currency
-          </p>
-          <p class="text-3xl font-medium text-blue-200">
-            Send and receive digital currency to anyone, anywhere, anytime.
-          </p>
-          <div class="download-buttons">
-            <a class="download-button">
-              <img src="~/assets/app-store-button.svg" />
-            </a>
-            <a class="download-button">
-              <img src="~/assets/play-store-button.svg" />
-            </a>
-          </div>
+          <p class="title">Get more.</p>
+          <p class="subtitle">Spending, sending and saving<br />in minutes</p>
+          <button class="button">Get started</button>
         </div>
-        <div class="flex justify-center items-end">
+        <div class="flex justify-center items-end relative">
           <phone />
         </div>
       </div>
-    </colors-hero>
+    </hero>
+    <div class="bg-colors p-8" />
 
     <block class="my-14">
       <container>
@@ -132,15 +122,23 @@ export default Vue.extend({})
 </script>
 
 <style>
-.download-buttons {
-  @apply mt-4 flex;
+.title {
+  @apply text-8xl font-extrabold flex;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500;
 }
 
-.download-button {
-  @apply cursor-pointer mr-4;
+.subtitle {
+  @apply text-2xl font-extrabold;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500;
 }
 
-.download-button img {
-  @apply w-auto h-12;
+.button {
+  @apply ring-2 font-bold text-lg ring-black rounded-lg p-2;
+  @apply transition-all delay-200;
+}
+
+.button:hover {
+  @apply bg-black text-white;
+  @apply transition-all delay-200;
 }
 </style>
