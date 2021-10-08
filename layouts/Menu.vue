@@ -52,11 +52,11 @@ export default {
 }
 
 .menu {
-  @apply container mx-auto grid grid-cols-2 gap-4;
+  @apply container mx-auto py-4 px-10 grid grid-cols-2 gap-4;
 }
 
 .menu-logo {
-  @apply ml-5 flex items-center;
+  @apply flex items-center;
 }
 
 .menu-links {
@@ -69,11 +69,11 @@ export default {
 }
 
 .menu-links li a {
-  @apply p-5 flex items-center justify-center font-bold text-black dark:text-white hover:bg-white cursor-pointer;
+  @apply p-5 flex items-center justify-center text-base font-bold text-black dark:text-white hover:bg-white cursor-pointer;
 }
 
 .menu-links li a.primary {
-  @apply relative bg-gray-100 dark:bg-gray-900 text-black dark:text-white font-bold rounded-lg;
+  @apply relative bg-gray-100 dark:bg-gray-900 text-xl text-black dark:text-white font-bold rounded-lg;
   @apply transition-all delay-200;
   @apply p-2 mx-3;
 }

@@ -14,42 +14,59 @@
     </hero>
     <div class="bg-colors p-8" />
 
-    <block class="my-14">
-      <container>
-        <BlockTitle>What is MultiCash...</BlockTitle>
+    <div class="relative">
+      <container class="grid grid-cols-3 gap-8">
+        <div class="flex items-end justify-end">
+          <img
+            src="~/assets/mobile/hand-phone.png"
+            class="youre-in-control-image"
+          />
+        </div>
+        <div class="col-span-2 my-20">
+          <BlockTitle>You're in control</BlockTitle>
 
-        <div class="mt-8 grid grid-cols-3 gap-8">
-          <Feature class="transform -rotate-3 text-green-500" title="Save">
-            Earn up to 2.50% APY interest on your digital currency holdings.
-            That is 41.66x the average national savings account rate of 0.06%
-            APY.
-          </Feature>
-          <Feature
-            class="transform rotate-1 translate-y-11 text-yellow-500"
-            title="Spend"
-          >
-            Easily pay for goods and services in a few seconds with no delays.
-            Send and receive MultiCash from anywhere around the world.
-          </Feature>
-          <Feature
-            class="transform rotate-3 text-blue-500"
-            title="No Hidden Fees"
-          >
-            You don’t have to worry about account maintenance fees, or random
-            hidden bank charges. The only thing you will see are transaction
-            fees which are as a set 0.50%, just enough to ensure payments are
-            delivered instantly.
-          </Feature>
+          <div class="mt-8 grid grid-cols-3 gap-8">
+            <Feature
+              title="Save"
+              gradient-from="from-pink-400"
+              gradient-to="to-pink-500"
+            >
+              Earn up to 2.50% APY interest.
+            </Feature>
+            <Feature
+              title="Spend"
+              gradient-from="from-pink-500"
+              gradient-to="to-purple-500"
+            >
+              Easily pay for goods and services.
+            </Feature>
+            <Feature
+              title="Control"
+              gradient-from="from-green-500"
+              gradient-to="to-blue-500"
+            >
+              Worldwide 24/7.
+            </Feature>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            adipiscing erat eget risus sollicitudin pellentesque et non erat.
+          </p>
+
+          <div class="flex justify-end">
+            <button class="button">Learn more</button>
+          </div>
         </div>
       </container>
-    </block>
+    </div>
 
     <block
       class="bg-gradient-to-bl from-blue-100 to-pink-200 dark:from-blue-900 dark:to-pink-900"
     >
       <container>
         <BlockTitle from="from-purple-400" to="to-pink-500">
-          Who is MultiCash...
+          It's simple
         </BlockTitle>
 
         <div class="grid grid-cols-3">
@@ -133,12 +150,17 @@ export default Vue.extend({})
 }
 
 .button {
-  @apply ring-2 font-bold text-lg ring-black rounded-lg p-2;
+  @apply ring-2 font-bold text-xl ring-black rounded-lg p-2;
   @apply transition-all delay-200;
 }
 
 .button:hover {
   @apply bg-black text-white;
   @apply transition-all delay-200;
+}
+
+.youre-in-control-image {
+  @apply object-right-bottom object-cover h-4/5;
+  @apply absolute bottom-0;
 }
 </style>
