@@ -1,17 +1,20 @@
 <template>
   <div>
-    <hero>
-      <div class="grid grid-cols-2 gap-4">
-        <div>
-          <p class="title">Get more.</p>
-          <p class="subtitle">Spending, sending and saving<br />in minutes</p>
-          <button class="button">Get started</button>
+    <div class="relative">
+      <hero>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <p class="title">Get more.</p>
+            <p class="subtitle">Spending, sending and saving<br />in minutes</p>
+            <button class="button">Get started</button>
+          </div>
+          <div class="flex justify-center items-center">
+            <phone />
+          </div>
         </div>
-        <div class="flex justify-center items-end relative">
-          <phone />
-        </div>
-      </div>
-    </hero>
+      </hero>
+    </div>
+
     <div class="bg-colors p-8" />
 
     <div class="relative">
@@ -150,12 +153,12 @@ export default Vue.extend({})
 }
 
 .button {
-  @apply ring-2 font-bold text-xl ring-black rounded-lg p-2;
+  @apply ring-2 font-bold text-xl ring-black dark:ring-white rounded-lg p-2;
   @apply transition-all delay-200;
 }
 
 .button:hover {
-  @apply bg-black text-white;
+  @apply bg-black dark:bg-white text-white dark:text-black;
   @apply transition-all delay-200;
 }
 

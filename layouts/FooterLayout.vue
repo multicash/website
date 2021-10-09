@@ -16,7 +16,7 @@
         </div>
       </div>
 
-      <Logo class="w-auto h-7 sm:h-8" />
+      <Logo class="w-auto h-7 sm:h-8" flat />
 
       <div class="copyright">© 2021 MultiCash. All Rights Reserved</div>
     </container>

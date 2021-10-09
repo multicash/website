@@ -48,7 +48,7 @@ export default {
 
 <style>
 .menu-container {
-  @apply bg-gray-100;
+  @apply bg-gray-100 dark:bg-black dark:bg-opacity-50;
 }
 
 .menu {
@@ -69,7 +69,8 @@ export default {
 }
 
 .menu-links li a {
-  @apply p-5 flex items-center justify-center text-base font-bold text-black dark:text-white hover:bg-white cursor-pointer;
+  @apply text-black dark:text-white hover:bg-white dark:hover:bg-black;
+  @apply p-5 flex items-center justify-center text-base font-bold cursor-pointer;
 }
 
 .menu-links li a.primary {

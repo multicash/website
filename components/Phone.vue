@@ -1,7 +1,5 @@
 <template>
-  <div class="phone">
-    <img src="~/assets/mobile/home-view-ios.png" />
-  </div>
+  <img class="phone" src="~/assets/mobile/home-view-ios.png" />
 </template>
 
 <script>
@@ -12,18 +10,9 @@ export default {
 
 <style>
 .phone {
-  @apply absolute
-    p-1
-    bg-white
-    dark:bg-gray-800
-    rounded-2xl
-    shadow-lg
-    transform
-    scale-150
-    translate-y-14;
-}
+  @apply object-cover h-full;
+  @apply absolute top-6;
 
-.phone img {
-  @apply rounded-xl w-32;
+  height: 105%;
 }
 </style>
