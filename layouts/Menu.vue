@@ -69,7 +69,7 @@ export default {
 .menu-links {
   z-index: 1;
   @apply flex align-middle md:m-2;
-  @apply justify-center md:justify-end;
+  @apply justify-evenly md:justify-end;
 }
 
 .menu-links li {
