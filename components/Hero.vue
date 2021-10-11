@@ -12,6 +12,6 @@ export default {
 
 <style>
 .hero {
-  @apply py-24;
+  @apply py-14 md:py-24;
 }
 </style>

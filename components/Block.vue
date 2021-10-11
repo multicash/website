@@ -1,5 +1,5 @@
 <template>
-  <div class="block">
+  <div class="py-16" :class="{ 'py-24': large }">
     <slot />
   </div>
 </template>
@@ -7,11 +7,12 @@
 <script>
 export default {
   name: 'Section',
+
+  props: {
+    large: {
+      type: Boolean,
+      default: false,
+    },
+  },
 }
 </script>
-
-<style>
-.block {
-  @apply py-16;
-}
-</style>

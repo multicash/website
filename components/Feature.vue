@@ -8,7 +8,7 @@
         {{ title }}
       </span>
     </h4>
-    <p class="leading-none text-lg text-gray-500 dark:text-gray-200">
+    <p class="leading-none text-xl text-gray-500 dark:text-gray-200">
       <slot />
     </p>
   </div>
@@ -39,6 +39,7 @@ export default {
 
 <style>
 .feature h4 {
-  @apply font-black text-5xl;
+  @apply font-black;
+  @apply text-4xl md:text-5xl;
 }
 </style>

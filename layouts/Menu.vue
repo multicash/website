@@ -2,7 +2,7 @@
   <div class="menu-container">
     <div class="menu">
       <div class="menu-logo">
-        <Logo class="w-auto h-7 sm:h-8" flat />
+        <Logo flat />
       </div>
 
       <ul class="menu-links">
@@ -52,16 +52,24 @@ export default {
 }
 
 .menu {
-  @apply container mx-auto py-4 px-10 grid grid-cols-2 gap-4;
+  @apply container mx-auto grid gap-4;
+  @apply grid-cols-1 md:grid-cols-2;
+  @apply py-4 px-10;
 }
 
 .menu-logo {
   @apply flex items-center;
+  @apply justify-center md:justify-between;
+}
+
+.menu-logo svg {
+  @apply w-auto h-5 md:h-7 lg:h-8;
 }
 
 .menu-links {
   z-index: 1;
-  @apply flex justify-end align-middle;
+  @apply flex align-middle md:m-2;
+  @apply justify-center md:justify-end;
 }
 
 .menu-links li {
@@ -70,19 +78,24 @@ export default {
 
 .menu-links li a {
   @apply text-black dark:text-white hover:bg-white dark:hover:bg-black;
-  @apply p-5 flex items-center justify-center text-base font-bold cursor-pointer;
+  @apply flex items-center justify-center font-bold cursor-pointer;
+  @apply py-2 px-2 sm:py-3 sm:px-3 lg:px-5;
+  @apply text-xs sm:text-sm lg:text-base;
+  @apply rounded-md sm:rounded-lg;
 }
 
 .menu-links li a.primary {
-  @apply relative bg-gray-100 dark:bg-gray-900 text-xl text-black dark:text-white font-bold rounded-lg;
-  @apply transition-all delay-200;
-  @apply p-2 mx-3;
+  @apply relative bg-gray-100 dark:bg-gray-900 text-black dark:text-white font-bold;
+  @apply py-1 px-1 sm:px-2 mx-2 lg:p-2 lg:mx-3;
+  @apply text-sm sm:text-lg lg:text-xl;
+  @apply rounded sm:rounded-lg;
 }
 
 .menu-links li a.primary::before {
   z-index: -1;
   content: '';
-  @apply absolute bg-gradient-to-tr from-purple-600 via-purple-500 to-pink-500 -inset-1 rounded-xl;
+  @apply absolute bg-gradient-to-tr from-purple-600 via-purple-500 to-pink-500 -inset-1;
+  @apply rounded-lg sm:rounded-xl;
 }
 
 .menu-links li a.primary:hover {

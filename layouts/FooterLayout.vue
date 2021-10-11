@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <container>
-      <div class="grid grid-cols-4 gap-6">
+      <div class="footer-content">
         <div v-for="section in sections" :key="section.name">
           <h6 class="footer-link-title">{{ section.name }}</h6>
           <ul>
@@ -109,12 +109,20 @@ export default {
   @apply py-10 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-500;
 }
 
+.footer-content {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-6;
+}
+
 .footer-link-title {
   @apply font-bold text-xl mb-2 text-purple-900 dark:text-purple-400;
 }
 
 .footer-link {
   @apply py-1 hover:text-blue-400 cursor-pointer;
+}
+
+.footer .multicash-logo {
+  @apply mt-5 md:mt-0;
 }
 
 .copyright {

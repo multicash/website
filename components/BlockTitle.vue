@@ -12,6 +12,7 @@ export default {
 
 <style>
 .block-title {
-  @apply mb-4 text-7xl text-black dark:text-white font-bold leading-none tracking-tight;
+  @apply text-black dark:text-white font-bold leading-none tracking-tight;
+  @apply mb-4 text-6xl md:text-7xl;
 }
 </style>
