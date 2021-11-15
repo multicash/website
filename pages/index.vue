@@ -100,6 +100,7 @@
         </div>
         <p class="get-multi-title">Get multi</p>
       </container>
+      <img class="get-multi-icon" src="~/assets/logo-200.png" />
     </div>
 
     <div class="bg-colors h-4" />
@@ -197,11 +198,17 @@ export default Vue.extend({})
 }
 
 .get-multi-image img {
-  @apply h-screen max-h-full w-full object-cover object-top;
+  max-height: 50rem;
+  @apply h-screen w-full object-cover object-top;
 }
 
 .get-multi-title {
   @apply font-bold text-white;
   @apply text-7xl md:text-9xl;
+}
+
+.get-multi-icon {
+  @apply absolute bottom-5 right-5;
+  @apply h-10 w-10;
 }
 </style>

@@ -10,6 +10,6 @@ export default {
 
 <style>
 .main-container {
-  @apply container mx-auto px-4 sm:px-10;
+  @apply container mx-auto px-4 sm:px-10 max-w-screen-xl;
 }
 </style>

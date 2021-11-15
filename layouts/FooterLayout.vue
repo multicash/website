@@ -10,7 +10,7 @@
               :key="link.name"
               class="footer-link"
             >
-              <a>{{ link.name }}</a>
+              <a :href="link.href">{{ link.name }}</a>
             </li>
           </ul>
         </div>
@@ -35,15 +35,15 @@ export default {
           links: [
             {
               name: 'About MultiCash',
+              href: '/',
             },
             {
               name: 'Documentation',
-            },
-            {
-              name: 'GitBook',
+              href: 'https://github.com/multicash',
             },
             {
               name: 'Contact Us',
+              href: '/contact',
             },
           ],
         },
@@ -51,16 +51,20 @@ export default {
           name: 'Get Started',
           links: [
             {
-              name: 'Wallets',
+              name: 'Downloads',
+              href: '/download',
             },
             {
-              name: 'Exchanges',
+              name: 'Buy MultiCash',
+              href: '/buy',
             },
             {
-              name: 'Block Explorer',
+              name: 'Transaction Details',
+              href: 'https://explorer.multicash.io',
             },
             {
               name: 'Media Kit',
+              href: '/media-kit',
             },
           ],
         },
@@ -69,9 +73,11 @@ export default {
           links: [
             {
               name: 'GitHub',
+              href: 'https://github.com/multicash',
             },
             {
               name: 'Privacy Policy',
+              href: '/privacy-policy',
             },
           ],
         },
@@ -80,21 +86,11 @@ export default {
           links: [
             {
               name: 'Twitter',
+              href: 'https://twitter.com/MultiCash_io',
             },
             {
               name: 'Discord',
-            },
-            {
-              name: 'Reddit',
-            },
-            {
-              name: 'Facebook',
-            },
-            {
-              name: 'Telegram',
-            },
-            {
-              name: 'Bitcointalk',
+              href: 'https://discord.gg/eYQSkb9VJU',
             },
           ],
         },
@@ -110,7 +106,7 @@ export default {
 }
 
 .footer-content {
-  @apply grid grid-cols-2 md:grid-cols-4 gap-6;
+  @apply grid grid-cols-2 md:grid-cols-4 gap-6 pb-5;
 }
 
 .footer-link-title {
